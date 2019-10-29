@@ -1,54 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <View
-        android:id = "@+id/view_1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#000000"
-       />
-    <View
-        android:id = "@+id/view_2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#FF0033"
-        android:layout_below="@id/view_1"
-        />
-    <LinearLayout
-    android:id = "@+id/ll_1"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_below="@id/view_2"
-    android:orientation="horizontal"
-    android:background="#0033FF"
-    android:padding="15dp">
-        <View
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="#FF0033"/>
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000000"
-            android:padding="15dp">
-            <View
-                android:id= "@+id/view_3"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#FF9900" />
-            <View
-                android:id= "@+id/view_4"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#FF9900"
-                android:layout_toRightOf="@id/view_3"
-                android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/btn_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
 
-        </RelativeLayout>
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
