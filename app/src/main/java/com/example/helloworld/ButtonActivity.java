@@ -20,7 +20,7 @@ public class ButtonActivity extends AppCompatActivity {
         mBtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ButtonActivity.this,"button 3 is clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ButtonActivity.this,"button 3 is clicked", Toast.LENGTH_LONG).show();
             }
         });
         mTextView = findViewById(R.id.tv_1);
