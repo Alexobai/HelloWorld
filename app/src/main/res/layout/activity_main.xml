@@ -55,60 +55,7 @@
             android:layout_height="wrap_content"
             android:text="GridView"
             android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/btn_extra9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"/>
+
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -130,6 +77,12 @@
                     android:text="Test"/>
             </LinearLayout>
         </HorizontalScrollView>
+        <Button
+            android:id="@+id/btn_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView"
+            android:textAllCaps="false"/>
     </LinearLayout>
 
 </ScrollView>
