@@ -14,6 +14,6 @@ public class ImageViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_view);
         mIV4 = findViewById(R.id.iv_4);
-        Glide.with(this).load("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png").into(mIV4);
+        Glide.with(this).load("http://goo.gl/gEgYUd").into(mIV4);
     }
 }

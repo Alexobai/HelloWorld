@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mRadioButton;
     private Button mBtnCheckBox;
     private Button mBtnImageView;
+    private Button mBtnListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mRadioButton = findViewById(R.id.btn_radio);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
         mBtnImageView = findViewById(R.id.btn_imageview);
+        mBtnListView = findViewById(R.id.btn_listview);
         setListeners();
     }
 
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mRadioButton.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnImageView.setOnClickListener(onClick);
+        mBtnListView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -62,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_imageview:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
                     break;
+                case R.id.btn_listview:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
             }
             startActivity(intent);
         }
