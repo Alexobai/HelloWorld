@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".GridViewActivity"></activity>
         <activity android:name=".ListViewActivity"></activity>
         <activity android:name=".ImageViewActivity"></activity>
         <activity android:name=".CheckBoxActivity" />
