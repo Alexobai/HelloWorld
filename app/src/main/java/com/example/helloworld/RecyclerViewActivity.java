@@ -10,6 +10,8 @@ import android.widget.Button;
 public class RecyclerViewActivity extends AppCompatActivity {
 
     private Button mBtnLinear;
+    private Button mBtnHorizontal;
+    private Button mBtnGrid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,22 @@ public class RecyclerViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RecyclerViewActivity.this, LinearRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnHorizontal = findViewById(R.id.btn_horizontal);
+        mBtnHorizontal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerViewActivity.this, HorizontalRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnGrid = findViewById(R.id.btn_grid);
+        mBtnGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerViewActivity.this, GridRecyclerViewActivity.class);
                 startActivity(intent);
             }
         });
