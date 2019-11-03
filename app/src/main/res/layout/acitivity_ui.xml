@@ -101,6 +101,12 @@
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:text="Dialog"/>
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress"
+            android:textAllCaps="false"/>
     </LinearLayout>
 
 </ScrollView>

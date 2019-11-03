@@ -20,7 +20,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnListView;
     private Button mBtnGridView;
     private Button mBtnRecyclerView;
-    private Button mBtnWebView,mBtnToast,mBtnDialog;
+    private Button mBtnWebView,mBtnToast,mBtnDialog,mBtnProgress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnWebView = findViewById(R.id.btn_webview);
         mBtnToast = findViewById(R.id.btn_toast);
         mBtnDialog = findViewById(R.id.btn_dialog);
+        mBtnProgress = findViewById(R.id.btn_progress);
         setListeners();
     }
 
@@ -54,6 +55,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
         mBtnDialog.setOnClickListener(onClick);
+        mBtnProgress.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -97,7 +99,9 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.btn_dialog:
                     intent = new Intent(UIActivity.this, DialogActivity.class);
                     break;
-
+                case R.id.btn_progress:
+                    intent = new Intent(UIActivity.this, ProgressActivity.class);
+                    break;
             }
             startActivity(intent);
         }
