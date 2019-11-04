@@ -24,14 +24,20 @@ public class MyButton extends AppCompatButton {
     }
 
     @Override
+    public boolean dispatchTouchEvent(MotionEvent event) { //not only action down but also action up
+        Log.d("MyButton","dispatchTouchEvent");
+        return super.dispatchTouchEvent(event);
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
-        super.onTouchEvent(event);
+
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
                 Log.d("MyButton","onTouchEvent");
                 break;
 
         }
-        return false;
+        return super.onTouchEvent(event);
     }
 }
