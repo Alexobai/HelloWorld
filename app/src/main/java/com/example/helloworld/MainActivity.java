@@ -11,7 +11,7 @@ import com.example.helloworld.fragment.ContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtnUI,mBtnFragment;
+    private Button mBtnUI,mBtnFragment,mBtnEvent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI.setOnClickListener(onClick);
         mBtnFragment = findViewById(R.id.btn_fragment);
         mBtnFragment.setOnClickListener(onClick);
+        mBtnEvent = findViewById(R.id.btn_event);
+        mBtnEvent.setOnClickListener(onClick);
     }
     class OnClick implements View.OnClickListener{
 
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_fragment:
                     intent = new Intent(MainActivity.this, ContainerActivity.class);
+                    break;
+                case R.id.btn_event:
+                    intent = new Intent(MainActivity.this, EventActivity.class);
                     break;
             }
             startActivity(intent);

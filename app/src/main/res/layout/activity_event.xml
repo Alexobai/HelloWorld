@@ -4,26 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".EventActivity"
     android:orientation="vertical">
-    <Button
-        android:id="@+id/btn_ui"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="UI"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/btn_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fragment"
-        android:textAllCaps="false"/>
     <Button
         android:id="@+id/btn_event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Event"
+        android:text="click me"
         android:textAllCaps="false"/>
-
-
+<!--        android:onClick="show"/>-->
 
 </LinearLayout>
