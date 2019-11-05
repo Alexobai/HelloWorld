@@ -29,7 +29,18 @@
         android:layout_height="wrap_content"
         android:text="Data storage"
         android:textAllCaps="false"/>
-
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BroadCast"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_anime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anime"
+        android:textAllCaps="false"/>
 
 
 </LinearLayout>

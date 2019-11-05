@@ -10,12 +10,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.helloworld.broadcast.BroadActivity;
 import com.example.helloworld.datastorage.DataStorageActivity;
 import com.example.helloworld.fragment.ContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtnUI,mBtnFragment,mBtnEvent,mBtnDataStorage;
+    private Button mBtnUI,mBtnFragment,mBtnEvent,mBtnDataStorage,mBtnBroadCast,mBtnAnime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         mBtnEvent.setOnClickListener(onClick);
         mBtnDataStorage = findViewById(R.id.btn_data);
         mBtnDataStorage.setOnClickListener(onClick);
+        mBtnBroadCast = findViewById(R.id.btn_broadcast);
+        mBtnBroadCast.setOnClickListener(onClick);
+        mBtnAnime = findViewById(R.id.btn_anime);
+        mBtnAnime.setOnClickListener(onClick);
 
 
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
@@ -50,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_data:
                     intent = new Intent(MainActivity.this, DataStorageActivity.class);
+                    break;
+                case R.id.btn_broadcast:
+                    intent = new Intent(MainActivity.this, BroadActivity.class);
+                    break;
+                case R.id.btn_anime:
+                    intent = new Intent(MainActivity.this, ObjectAnimActivity.class);
                     break;
             }
             startActivity(intent);
