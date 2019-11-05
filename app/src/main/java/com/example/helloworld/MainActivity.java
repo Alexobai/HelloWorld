@@ -1,7 +1,10 @@
 package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnEvent.setOnClickListener(onClick);
         mBtnDataStorage = findViewById(R.id.btn_data);
         mBtnDataStorage.setOnClickListener(onClick);
+
+
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
     }
     class OnClick implements View.OnClickListener{
 
